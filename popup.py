@@ -4,7 +4,7 @@ import PySimpleGUI as sg
 result = sg.popup_yes_no("あなたにおすすめの犬種を探します。あなたが好きなのは超小型犬ですか？")
 
 if result == "Yes":
-    sg.popup_yes_no("性格は穏やかな子が好きですか？")
+    result = sg.popup_yes_no("性格は穏やかな子が好きですか？")
 
     if result == "Yes":
      sg.popup("あなたにはマルチーズ、ヨークシャテリアがおすすめです")
@@ -15,10 +15,10 @@ if result == "Yes":
 
 
 elif result == "No":
-    sg.popup_yes_no("では小型犬が好きですか？")
+    result = sg.popup_yes_no("では小型犬が好きですか？")
 
     if result == "Yes":
-        sg.popup_yes_no("性格は穏やかな子が好きですか？")
+        result = sg.popup_yes_no("性格は穏やかな子が好きですか？")
 
         if result == "Yes":
             sg.popup("あなたにはキャバリア、シーズー、パグがおすすめです")
@@ -29,10 +29,10 @@ elif result == "No":
 
 
     elif result == "No":
-        sg.popup_yes_no("では中型犬が好きですか？")
+        result = sg.popup_yes_no("では中型犬が好きですか？")
 
         if result == "Yes":
-            sg.popup_yes_no("性格は穏やかな子が好きですか？")
+            result = sg.popup_yes_no("性格は穏やかな子が好きですか？")
 
             if result == "Yes":
                 sg.popup("あなたにはビーグル、フレンチブルドック、ミニチュアブルテリアがおすすめです")
@@ -43,10 +43,10 @@ elif result == "No":
 
 
         if result == "No":
-            sg.popup_yes_no("では大型犬が好きですか？")
+            result = sg.popup_yes_no("では大型犬が好きですか？")
 
             if result == "Yes":
-                sg.popup_yes_no("性格は穏やかな子が好きですか？")
+                result = sg.popup_yes_no("性格は穏やかな子が好きですか？")
 
                 if result == "Yes":
                     sg.popup("あなたには秋田犬、ラブラドールレトリバー、シェパードがおすすめです")
