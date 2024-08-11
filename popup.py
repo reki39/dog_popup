@@ -19,7 +19,7 @@ if result == "Yes":
     if result == "Yes":
      sg.popup("あなたにはチワワ、トイプードル、パピヨン、柴犬、ポメラニアンがおすすめです")
 
-
+#以下も全く同じ理由で動作していないので、全てのsg.popup_yes_noは result = sg.popup_yes_noとする必要がある
 
 elif result == "No":
     sg.popup_yes_no("では小型犬が好きですか？")
